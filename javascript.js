@@ -2,6 +2,8 @@ $(function() {
     let date = moment().format("MMMM Do YYYY");
     $("#currentDay").append(date);
 
+    let currentTime = parseInt(moment().format("HH"))
+
     let $input9AM = $("#input9AM");
     let $input10AM = $("#input10AM");
     let $input11AM = $("#input11AM");
@@ -34,5 +36,4 @@ $(function() {
     $("#input4PM").append(localStorage.getItem("16PM"));
     $("#input5PM").append(localStorage.getItem("17PM"));
 
-    let currentTime = parseInt(moment().format("HH"))
 })
