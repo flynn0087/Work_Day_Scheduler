@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--these are the links needed to create page-->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,13 +24,15 @@
   </head>
 
   <body>
+    <!--this is the header including title of the page, the js will also make it show the date-->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
+    <!--this is the bootstrap container that creates the formatting for the time slots-->
     <div class="container" style="position:relative; left:100px">
-      
+      <!--this division determines the characteristics of a given time slot row-->
       <div class="row" id="row9">
         <div class="input-row">
           <p>9AM</p>
@@ -121,6 +124,7 @@
       </div>   
     </div>
     
+    <!--these are the links making the scripts active-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="javascript.js"></script>
