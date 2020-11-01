@@ -36,4 +36,18 @@ $(function() {
     $("#input4PM").append(localStorage.getItem("16PM"));
     $("#input5PM").append(localStorage.getItem("17PM"));
 
+    $("textarea").each(function () {
+        var timeId = parseInt($(this).attr("timeId"));
+        if (timeId < currentTime) {
+            $(this).addClass("past");
+        }
+
+        if (timeId > currentTime) {
+            $(this).addClass("future")
+        }
+
+        if (timeId === currentTime) {
+            $(this).addClass("present")
+        }
+    })
 })
