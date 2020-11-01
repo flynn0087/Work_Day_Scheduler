@@ -21,7 +21,7 @@ $(function() {
         localStorage.setItem("14PM", ($input2PM.val()));
         localStorage.setItem("15PM", ($input3PM.val()));
         localStorage.setItem("16PM", ($input4PM.val()));
-        localStorage.setItem("17PM", ($input5PM.val()));
+        localStorage.setItem("17PM", ($input5PM.val()))
     })
 
     $("#input9AM").append(localStorage.getItem("9AM"));
@@ -33,4 +33,6 @@ $(function() {
     $("#input3PM").append(localStorage.getItem("15PM"));
     $("#input4PM").append(localStorage.getItem("16PM"));
     $("#input5PM").append(localStorage.getItem("17PM"));
+
+    let currentTime = parseInt(moment().format("HH"))
 })
