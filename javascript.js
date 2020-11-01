@@ -44,16 +44,16 @@ $(function() {
 
     //this area color codes the boxes based on current time, whether past, present or future
     $("textarea").each(function () {
-        let timeId = parseInt($(this).attr("timeId"));
-        if (timeId < currentTime) {
+        let name = parseInt($(this).attr("name"));
+        if (name < currentTime) {
             $(this).addClass("past");
         }
 
-        if (timeId > currentTime) {
+        if (name > currentTime) {
             $(this).addClass("future")
         }
 
-        if (timeId === currentTime) {
+        if (name === currentTime) {
             $(this).addClass("present")
         }
     })
