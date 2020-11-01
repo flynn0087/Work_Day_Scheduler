@@ -37,7 +37,7 @@ $(function() {
     $("#input5PM").append(localStorage.getItem("17PM"));
 
     $("textarea").each(function () {
-        var timeId = parseInt($(this).attr("timeId"));
+        let timeId = parseInt($(this).attr("timeId"));
         if (timeId < currentTime) {
             $(this).addClass("past");
         }
@@ -51,3 +51,4 @@ $(function() {
         }
     })
 })
+
